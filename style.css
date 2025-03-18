@@ -1,0 +1,96 @@
+/* Optimisation css /**/
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* rendre la scroll bar transparente /**/
+/*::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+} /**/
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.65;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+/* début css /**/
+a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+#site {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "head head head"
+    "side main main"
+    "side main main";
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: head;
+    padding: 10px;
+    background-color: red;
+    & a {
+        user-select: none;
+        cursor: pointer;
+    }
+}
+
+#exercises {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: greenyellow;;
+}
+
+
+.hide {
+    grid-template-areas: 
+    "head head head"
+    "main main main"
+    "main main main" !important;
+    & > #exercises {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    place-items: center;
+    & > div {
+        width: 750px;
+    }
+}
+
+#footer {
+    /*Tu veux faire une bar en bas avec contacte?*/
+}
