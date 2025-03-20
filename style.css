@@ -28,69 +28,78 @@ p {
 } /**/
 
 body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.65;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.65;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 /* début css /**/
 a {
-    color: black;
-    text-decoration: none;
-    
+  color: black;
+  text-decoration: none;
 }
 
 #site {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
     "head head head"
     "side main main"
     "side main main";
+    transition: grid-template-columns 300ms;
 }
 
 #header {
-    display: flex;
-    justify-content: space-evenly;
-    grid-area: head;
-    padding: 10px;
-    background-color: red;
-    & a {
-        user-select: none;
-        cursor: pointer;
-    }
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: head;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  & a {
+    color: white;
+    user-select: none;
+    cursor: pointer;
+  }
 }
 
 #exercises {
-    grid-area: side;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: greenyellow;;
+  grid-area: side;
+  display: flex;
+  flex-direction: column;
+  /*padding: 10px;*/
+  background: black;
+  & a {
+    color: white;
+    text-wrap: nowrap;
+  }
 }
+
 
 
 .hide {
-    grid-template-areas: 
+    /*
+  grid-template-areas:
     "head head head"
     "main main main"
-    "main main main" !important;
-    & > #exercises {
-        display: none;
-        visibility: hidden;
-    }
+    "main main main" !important;*/
+    grid-template-columns: 0fr 1fr !important;
+  & > #exercises {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 #main {
-    grid-area: main;
-    display: grid;
-    place-items: center;
-    & > div {
-        width: 750px;
-    }
+  grid-area: main;
+  display: grid;
+  place-items: center;
+  & > div {
+    width: 750px;
+  }
 }
 
 #footer {
-    /*Tu veux faire une bar en bas avec contacte?*/
+  /*Tu veux faire une bar en bas avec contacte?*/
 }

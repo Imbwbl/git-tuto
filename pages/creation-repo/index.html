@@ -3,16 +3,58 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Création de répo</title>
+        <title>Tuto Git</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="main.js"></script>
     </head>
     <body>
-        <div id="header">
-            <a href="/">Accueil</a>                
-        </div>
+        <div id="site" class="hide">
+            <div id="header">
+                <a id="exercises-button" onclick="open_exercises()">Exercices</a>
+                <a href="/">Accueil</a>
+                <a href="#whats-a-repo">C'est quoi un répo</a>
+                <a href="#history">Histoire</a>                                 
+            </div>
+            <div id="exercises">
+                <a href="/pages/creation-repo/">1. Création de répo</a>
+                <a href="/pages/link-local-repo/">2. Relier au répo</a>
+                <a href="/pages/add-commit-push/">3. Publier dans le répo</a>
+                <a href="/pages/clone-pull-branch/">4. Cloner et récupérer la branche </a>
+                <a href="/pages/github-pages/">5. Publier via github pages</a>
+
+            </div>
+            <div id="main">
+                <div>
+                        
+                    <h1>Création de répo</h1>
+                    <h2 id="whats-a-repo">C'est quoi un répo et à quoi ça sert ?</h2>
+                    
+                    <p>Un GitHub Repository est un espace de stockage et de gestion de code source pour un projet donné. C’est l’élément le plus basique de GitHub. Il contient l’ensemble des fichiers, du code source, de la documentation et de tout autre contenu nécessaire pour ce projet.c</p><br>
+
+                    <h2>Comment crée un répo</h2>
+                    
+                    <p>Git a été spécialement développé et optimisé pour le noyau Linux. Linus Torvalds a commencé son écriture en avril 2005, pour remplacer le programme propriétaire BitKeeper. En effet, Larry McVoy a révoqué la possibilité d'utiliser gratuitement son logiciel, après qu'Andrew Tridgell eut tenté une rétro-ingénierie sur les protocoles utilisés par BitKeeper. Les raisons de cette révocation restent toutefois controversées.</p><br>
+                    
+                    <p id="history">La première version a été publiée le 7 avril 2005. Depuis, le développement de cet outil s'est poursuivi. Il a été progressivement amélioré, se voyant doté d'interfaces graphiques, d'interfaces web ou de scripts évolués.</p><br>
+                    
+                    <p>Fin juillet 2005, Linus Torvalds a décidé de confier la maintenance et les évolutions de Git à Junio Hamano, expliquant qu'il avait « toujours dit qu'il ne voulait pas vraiment le maintenir sur le long terme ».</p><br>
+                                
+                    <p>Le développement est très actif. La parution de la première version stable (1.0) date du 21 décembre 2005, soit moins d'un an après le démarrage du projet.</p><br>
+                
+                    <p>Pour des raisons de sécurité, des travaux pour passer l’algorithme de hashage de SHA-1, considéré plus assez sécurisé, à SHA-256 sont en préparations</p>
+                
+                </div>
+            </div>
         
-        <script src="" async defer></script>
+
+            </div>
+            <div id="footer">
+
+
+
+            </div>
+        </div>
     </body>
 </html>
