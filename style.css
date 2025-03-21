@@ -41,6 +41,34 @@ a {
   text-decoration: none;
 }
 
+pre {
+  background-color: rgb(224, 224, 224);
+  border: 2px  rgb(177, 177, 177) solid;
+  border-radius: 3px;
+  padding: 5px;
+ &::before {
+  content: "> ";
+ }
+ &::after {
+  content: " |";
+  animation: blink 1s infinite;
+ }
+}
+
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
 #site {
   display: grid;
   grid-template-columns: 1fr 5fr;

@@ -1,0 +1,11 @@
+#main {
+    & > div {
+        width: 70vw;
+    }
+    & img {
+        border: solid 2px black;
+        border-radius: 10px;
+        width: 70vw;
+        height: auto;
+    }
+}
