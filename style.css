@@ -52,7 +52,20 @@ pre {
  &::after {
   content: " |";
   animation: blink 1s infinite;
+  transition: all 200ms ease-in-out;
  }
+ &:hover {
+  cursor: pointer;
+ }
+ &:hover:after {
+  content: "copy";
+  animation: none;
+  transition: all 200ms ease-in-out;
+  padding-left: 50%;
+  }
+  &:active::after {
+    content: "copied";
+  }
 }
 
 @keyframes blink {
@@ -118,6 +131,11 @@ pre {
     display: none;
     visibility: hidden;
   }
+}
+
+.wrong {
+  background-color: rgba(255, 181, 53, 0.80);
+  border: rgb(164, 104, 0) solid 2px;
 }
 
 #main {

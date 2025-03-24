@@ -18,14 +18,36 @@
                 <a href="#history">Histoire</a>                                 
             </div>
             <div id="exercises">
-                <a href="/pages/creation-repo/">1. Création de répo</a>
-                <a href="/pages/link-local-repo/">2. Relier au répo</a>
-                <a href="/pages/add-commit-push/">3. Publier dans le répo</a>
+                <a href="/pages/creation-repo/">1. Création de repository</a>
+                <a href="/pages/link-local-repo/">2. Relier au repository</a>
+                <a href="/pages/add-commit-push/">3. Publier dans le repository</a>
                 <a href="/pages/clone-pull-branch/">4. Cloner et récupérer la branche</a>
                 <a href="/pages/github-pages/">5. Publier via github pages</a>
             </div>
             <div id="main">
                 <div>
+                    <h1>Comment ajouter du contenue dans un repository</h1>
+                    <p>Pour rajouter du contenue après la création d'un répo il faudra faire un commit. Le commit est une bonne pratique vous pouvez rajouter du contenue sans mais pas recommander. </p>
+                    <h2>Comment on ajoute des fichiers ?</h2>
+                    <p>Pour ajouter les changements effectué sur le code if faut les ajouter dans git</p>
+                    <a onclick="copy(this)"><pre>git add &lt;file&gt;</pre></a>
+                    <p><i>Attention ! </i>Pour ajouter tout les fichier d'un coup il y a une nuance</p>
+                    <a onclick="copy(this)"><pre class="wrong">git add *</pre></a>
+                    <p>ceci n'ajoutera pas les fichiers cacher exemple: .gitignore</p>
+                    <p>il vaut mieux utiliser cette commande qui elle prendra tout en compte</p>
+                    <a onclick="copy(this)"><pre>git add .</pre></a>
+                    <h3>gitignore</h3>
+                    <!-- Expliquer ce qu'est gitignore -->
+                    <h2>Mais c'est quoi un commit ?</h2>
+                    <p>Un commit c'est un enregistrement de petits groupes de modifications significatives en tant que validations.</p>
+                    <p>Il s'effectue grâce à la commande suivante</p>
+                    <a onclick="copy(this)"><pre>git commit</pre></a>
+                    <p>attention quand on commit un commentaire est nécessaire pour ce faire la commande ouvre l'éditeur de text par défaut et il faudra changer la première ligne pour mettre notre commentaire</p>
+                    <p>si vous voulez éviter cette étape vous pouvez rajouter les arguments suivants</p>
+                    <a onclick="copy(this)"><pre>git commit -m "&lt;commentaire&gt;"</pre></a>
+                    <h2>Oui mais comment actualiser les fichiers sur github?</h2>
+                    <p>pour actualiser les fichier externeaux il faut push les commit à l'instance git grâce à la commande suivante</p>
+                    <a onclick="copy(this)"><pre>git push</pre></a>
                     
                 </div>
             </div>
