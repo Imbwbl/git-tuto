@@ -61,7 +61,7 @@ pre {
   content: "copy";
   animation: none;
   transition: all 200ms ease-in-out;
-  padding-left: 50%;
+  padding-left: 2em;
   }
   &:active::after {
     content: "copied";
@@ -96,6 +96,13 @@ tbody {
     border-bottom: 3px dotted black;
     border-radius: 0 0 8px 8px;
   }
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #site {
