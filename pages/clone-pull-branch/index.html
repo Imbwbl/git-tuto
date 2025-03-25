@@ -13,9 +13,7 @@
         <div id="site" class="hide">
             <div id="header">
                 <button id="exercises-button" onclick="open_exercises()">Exercices</button>
-                <a href="/">Accueil</a>
-                <a href="#whats-git">C'est quoi Git</a>
-                <a href="#history">Histoire</a>                                 
+                <a href="/">Accueil</a>                              
             </div>
             <div id="exercises">
                 <a href="/pages/creation-repo/">1. Création de repository</a>
@@ -27,6 +25,35 @@
             <div id="main">
                 <div>
                     <h1>Cloner et récuperer les fichiers d'un repository</h1>
+                    <p>(A partir d'ici travailler à plusieurs pour pouvoir faire l'exercise, inviter vous dans vos repository si cela n'est pas fait via github)</p>
+                    <h2>Cloner et récuperer la même chose ?</h2>
+                    <p>Cloner un repository et récuperer un repository sont très diffèrent voici leur difference :</p>
+                    <table>
+                        <tr>
+                          <th>git clone</th>
+                          <th>git pull</th>
+                        </tr>
+                        <tr>
+                          <td>1. Utilisé pour configurer un référentiel local.</td>
+                          <td>1. Utilisé pour synchroniser les référentiels distants et locaux.</td>
+                        </tr>
+                        <tr>
+                          <td>2. Faites une copie de votre référentiel distant et enregistrez-la sur votre machine locale.</td>
+                          <td>2. Récupérez et fusionnez les dernières modifications d’un référentiel distant vers votre référentiel local.</td>
+                        </tr>
+                        <tr>
+                            <td>3. Utilisé une fois dans un projet.</td>
+                            <td>3. Utilisé plusieurs fois dans un projet.</td>
+                        </tr>
+                    </table>
+                    <h2>Comment mettre on pratique ?</h2>
+                    <p>Pour cloner un repository il faut faire cette commande </p>
+                    <a onclick="copy(this)"><pre>git clone &lt;repository&gt; [&lt;branche&gt;]</pre></a>
+                    <p><b>La branche est nécessaire seulement si vous voulez prendre une branche alternative à la principal</b></p>
+                    <p>Pour récuperer / pull il faut faire cette commande</p>
+                    <a onclick="copy(this)"><pre>git pull [&lt;options&gt;] [&lt;repository&gt;]</pre></a>
+                    <p><b>Les options sont supplémentaire pour faire des choses plus précise et le repository est nécessaire seulement si on à jamais pull</b></p>
+                    <p><i>Si vous voulez juste faire pull il faut être dans le dossier ou le fichier git est présent</i></p>
                 </div>
             </div>
         </div>

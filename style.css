@@ -82,6 +82,22 @@ pre {
   }
 }
 
+tbody {
+  & th{
+    border: 3px solid black;
+    border-radius: 8px 8px 0 0;
+  }
+  & td {
+    text-align: center;
+    border-left: 3px dotted black;
+    border-right: 3px dotted black;
+  }
+  & > tr:nth-last-child(1) > td{
+    border-bottom: 3px dotted black;
+    border-radius: 0 0 8px 8px;
+  }
+}
+
 #site {
   display: grid;
   grid-template-columns: 1fr 5fr;
