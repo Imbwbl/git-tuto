@@ -7,6 +7,7 @@
         <meta name="description" content="Tutoriel d'utilisation de l'outil git">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" preload href="../../style.css">
+        <link rel="stylesheet" preload href="./style.css">
         <script defer src="../../main.js"></script>
     </head>
     <body>
@@ -54,6 +55,11 @@
                     <button onclick="copy(this)"><pre>git pull [&lt;options&gt;] [&lt;repository&gt;]</pre></button>
                     <p><b>Les options sont supplémentaire pour faire des choses plus précise et le repository est nécessaire seulement si on à jamais pull</b></p>
                     <p><i>Si vous voulez juste faire pull il faut être dans le dossier où le dossier cacher .git est présent</i></p>
+                    <h2>Les Branches</h2>
+                    <p>La création de branche se fait depuis github <a href="https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository" style="color: rgb(0, 89, 255); text-decoration: underline;">documentation</a></p>
+                    <img src="view-branches.webp" alt="voir toutes les branches">
+                    <p>Pour travailler sur une nouvelle branche on change la branche actuel</p>
+                    <button onclick="copy(this)"><pre>git checkout &lt;branch&gt;</pre></button>
                 </div>
             </div>
         </div>
