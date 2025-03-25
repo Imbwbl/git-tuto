@@ -1,0 +1,6 @@
+img {
+    width: 50vw;
+    height: auto;
+    border: solid 2px black;
+    border-radius: 10px;
+}
